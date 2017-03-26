@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddddd"
+    android:orientation="vertical"
+    tools:context="com.logics.khaynay.campusapp2.events.AddNote" >
+
+   
+    
+ 
+    
+        <ListView
+            android:id="@android:id/list"
+             android:layout_weight="1"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="1dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             >
+        </ListView>
+
+  
+
+
+
+         <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginBottom="10dp"
+         android:layout_marginLeft="10dp"
+         android:layout_marginRight="10dp"
+          android:background="#00000000"
+        android:orientation="horizontal" >
+          
+    
+      
+         <EditText
+            android:id="@+id/AddNoteEditText"
+            android:layout_width="0dp"
+            android:layout_height="41dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:layout_margin="10dp"
+            android:textColorHint="#333333" 
+            android:textColorHighlight="#333333"
+             android:layout_gravity="center"
+            android:hint="Enter Notes ....."
+           
+            style="@android:style/TextAppearance.Medium"
+            
+             />
+       
+          
+            <ImageView
+            android:id="@+id/Add_Note"
+           android:layout_width="70dp"
+           android:layout_height="70dp"
+           android:contentDescription="Note"
+           android:scaleType="centerCrop"
+           android:layout_margin="10dp"
+           android:onClick="addNote"
+           android:src="@drawable/add_event" />
+          
+    
+    </LinearLayout>
+    
+    
+          
+          
+          
+          
+
+
+</LinearLayout>

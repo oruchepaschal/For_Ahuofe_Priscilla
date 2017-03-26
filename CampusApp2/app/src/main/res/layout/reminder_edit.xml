@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#dddddd"
+    
+    android:padding="5dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/titlename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:hint="Sual Reminder"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+
+    <!--  -->
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/selectType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+           android:hint="Select one"
+            android:gravity="left"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        
+        
+        
+        
+         <RadioGroup 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/OptionsRadioGroup"
+        android:orientation="horizontal"
+         android:gravity="center"
+        android:background="#ffffff"
+        android:checkedButton="@+id/otherRadioButton" >
+        
+        <RadioButton 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:id="@+id/lecturesRadioButton"
+        	 android:layout_weight="0.5"
+        	 android:layout_marginLeft="10dp"
+        	 android:layout_gravity="center"
+        	android:hint="Lectures" />
+        
+        <RadioButton 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:id="@+id/otherRadioButton"
+        	android:layout_gravity="center"
+        	 android:layout_weight="0.5"
+        	  
+        	android:hint="Others" />
+        
+        
+        
+    </RadioGroup>
+
+    </LinearLayout>
+    
+      
+      
+      <!-- Lectures  -->
+      
+      
+         
+     <LinearLayout
+         android:id="@+id/lectureLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+         android:layout_gravity="center"
+         android:gravity="center"
+          android:background="@drawable/card_goldborder"
+         >
+
+      
+
+        <EditText
+            android:id="@+id/lecturename"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+           android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:hint="Enter lecture name"
+            android:ems="10" >
+        
+            
+
+            <requestFocus />
+        </EditText>
+        
+       
+        
+        
+    </LinearLayout>
+      
+    
+    <!--  -->
+   
+
+    
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+         android:layout_gravity="center"
+         android:gravity="center"
+          android:background="@drawable/card_goldborder"
+         >
+
+      
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+           android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:hint="Enter title ,eg : Block 'A'"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+        
+       
+        
+        
+    </LinearLayout>
+    
+    
+    
+    
+    
+   
+    
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+         android:layout_gravity="center"
+         android:gravity="center"
+          android:background="@drawable/card_goldborder"
+         >
+
+      
+
+        <EditText
+            android:id="@+id/details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+           android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:hint="Enter details"
+            android:inputType="textMultiLine"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+        
+       
+        
+        
+    </LinearLayout>
+    
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+         android:layout_gravity="center"
+         android:gravity="center"
+          android:background="#ffffff"
+        android:layout_marginLeft="5dp" >
+
+    
+
+       
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginBottom="1dp"
+         android:layout_marginTop="10dp"
+          android:background="#ffffff"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+        
+        <Button
+        android:id="@+id/reminder_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="0.5"
+        android:layout_margin="5dp"
+          android:padding="10dp"
+          android:textColorHint="@color/colorAccent"
+          android:layout_gravity="center"
+       
+        android:background="#ffffff"
+         android:textColor="@color/colorAccent"
+        android:hint="Date" />
+
+    <Button
+        android:id="@+id/reminder_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColorHint="#ee9999"
+        android:textColor="#ee9999"
+         android:background="#ffffff"
+         android:layout_margin="5dp"
+         android:layout_gravity="center"
+         android:padding="10dp"
+         android:hint="Time"
+          android:layout_weight="0.5"
+          android:gravity="center"
+        />
+        
+        </LinearLayout>
+    
+    <!-- Save button -->
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginBottom="1dp"
+         android:layout_marginTop="10dp"
+          android:background="#ffffff"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+       
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#ffffff"
+         android:background="#f8b552"
+         android:layout_margin="5dp"
+         android:layout_gravity="center"
+         android:padding="10dp"
+         android:hint="Save"
+          android:layout_weight="0.5"
+          android:gravity="center"
+        />
+        
+        </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddddd"
+    android:orientation="vertical"
+    tools:context="com.logics.khaynay.campusapp2.events.AddNote" >
+
+   
+    
+ 
+    
+        <ListView
+            android:id="@android:id/list"
+             android:layout_weight="1"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="1dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             >
+        </ListView>
+
+  <TextView android:id="@+id/android:empty"
+          android:layout_width="wrap_content"
+           android:background="@drawable/card_goldborder"
+        	android:layout_height="wrap_content"
+        	android:text="@string/no_reminders"/>
+
+    </LinearLayout>
+    
+    
+          
+          
+          
+          
+
+

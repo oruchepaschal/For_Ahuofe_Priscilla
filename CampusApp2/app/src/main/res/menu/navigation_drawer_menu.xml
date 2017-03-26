@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:checked="true"
+            android:id="@+id/item_navigation_drawer_home"
+            android:icon="@drawable/ic_home_2x"
+            android:title="Home" />
+        <item
+            android:id="@+id/item_navigation_drawer_news"
+            android:icon="@drawable/ic_event_2x"
+            android:title="News" />
+        <item
+            android:id="@+id/item_navigation_drawer_courses"
+            android:icon="@drawable/ic_payment_2x"
+            android:title="Courses" />
+        <item
+            android:id="@+id/item_navigation_drawer_timetable"
+            android:icon="@drawable/ic_toc_2x"
+            android:title="Timetable" />
+        <item
+            android:id="@+id/item_navigation_drawer_notification"
+            android:icon="@drawable/ic_alarm_2x"
+            android:title="Notification" />
+
+
+
+    </group>
+
+    <item android:title="Subheader">
+        <menu>
+            <item
+                android:id="@+id/item_navigation_drawer_settings"
+                android:icon="@drawable/ic_settings_2x"
+                android:title="Settings" />
+            <item
+                android:id="@+id/item_navigation_drawer_help_and_feedback"
+                android:icon="@drawable/ic_action_action_help"
+                android:title="Help and feedback" />
+            <item
+                android:id="@+id/item_navigation_drawer_about"
+                android:icon="@drawable/ic_info_2x"
+                android:title="About" />
+        </menu>
+    </item>
+
+</menu>
